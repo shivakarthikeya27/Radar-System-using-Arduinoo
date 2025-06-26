@@ -34,13 +34,11 @@ A simple GUI application is built in Processing to visualize the radar scan and 
 
 
 Output Preview
-You can add images or GIFs here showing:
-The physical setup
 The radar sweep interface
 Detection of objects at various distances
 
 
-Add a screenshot or short GIF of your radar interface in action!
+
 
  Applications & Learning Outcomes
 Understanding of ultrasonic sensing and distance calculation
