@@ -1,46 +1,43 @@
-Radar System Using Ultrasonic Sensor and Arduino UNO
-A mini radar system built using Arduino UNO, HC-SR04 ultrasonic sensor, and a servo motor, capable of detecting objects within a specified range and visualizing their position on a radar-like display using the Processing IDE. This project simulates basic radar functionalities by using ultrasonic sound waves for distance measurement and scanning.
+ Radar System using Arduino & Ultrasonic Sensor
 
-📌 Project Overview
-This project replicates the core functionality of a radar system on a small scale. Using an ultrasonic sensor mounted on a servo motor, the system sweeps through a defined angle range and detects nearby objects by measuring the time taken for sound waves to reflect back. The collected data is then transmitted to a computer and visualized in real-time as a radar sweep using a custom interface built with the Processing IDE.
+This project simulates a basic radar system using an "Arduino UNO", "HC-SR04 ultrasonic sensor", and a "servo motor". It scans a 180° area and detects nearby objects using ultrasonic pulses. Detected objects are visualized on a radar-style interface built in "Processing IDE".
 
-🎯 Key Features
-Object detection using ultrasonic sonar principles
-Rotational scanning with a servo motor
-Real-time 2D radar-style graphical interface
-Live distance feedback and angular positioning
-Seamless Arduino–Processing IDE integration
+ Features
 
-🔧 Components Used
-Arduino UNO
-HC-SR04 Ultrasonic Sensor
-SG90 Servo Motor
-USB cable (for serial communication)
-Jumper wires and breadboard
-PC with Processing IDE installed
+- Object detection using ultrasonic sensor  
+- 180° scanning using servo motor  
+- Real-time graphical radar visualization using Processing  
+- Displays both angle and distance of detected objects  
+- Ideal for learning embedded systems and sensor interfacing
 
-⚙️ How It Works
-The servo motor sweeps the ultrasonic sensor from left to right (e.g., 0° to 180°).
-At each angle, the HC-SR04 sensor emits a sound pulse and waits for the echo.
-The distance to the nearest object is calculated based on the time delay.
-The Arduino sends this angle and distance data over serial communication to the PC.
-A Processing sketch reads the incoming data and plots it in a radar-like display, updating in real time.
+How It Works
 
- Software & Programming
-Arduino IDE
-Used to write and upload the sensor and servo control logic to the Arduino UNO.
-Processing IDE
-A simple GUI application is built in Processing to visualize the radar scan and object detection output dynamically.
+1. The "servo motor" rotates the ultrasonic sensor between 0° to 180°.
+2. At each angle, the "HC-SR04 sensor" sends out an ultrasonic pulse and measures the time for the echo to return.
+3. The "Arduino" calculates the distance based on the time delay.
+4. Angle and distance data are sent over serial to the "Processing IDE".
+5. The "Processing sketch" plots this data on a radar-like display, mimicking real radar scans.
 
+Components Required
 
-Output Preview
-The radar sweep interface
-Detection of objects at various distances
+- Arduino UNO  
+- HC-SR04 Ultrasonic Sensor  
+- SG90 Servo Motor  
+- Jumper Wires  
+- Breadboard  
+- USB Cable  
+- Processing IDE (for visualization)
 
+#Software & Tools
 
+- Arduino IDE  
+- Processing IDE  
+- C++/Arduino language  
+- Serial Communication
 
+ Applications
 
- Applications & Learning Outcomes
-Understanding of ultrasonic sensing and distance calculation
-Integration of hardware and software for real-time systems
-Basics of servo motor control and angle tracking
+- Obstacle detection
+- Smart parking assistance
+- Intro to radar systems
+- Educational demonstrations
